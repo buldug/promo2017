@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+
+    <title>Drupal Synergy 2017</title>
+
+    <meta name="author" content="Valery 'valthebald' Lourie"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="css/highlight-default.min.css"/>
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+        document.write('<link rel="stylesheet" href="css/print/' + ( window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">');
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+    <script src="js/highlight.min.js"></script>
+</head>
+
+<body>
+
+<div class="reveal">
+
+<!-- Any section element inside of this container is displayed as a slide -->
+<section class="slides">
+  <section>
+    <h2><img src="media/logo.png" alt="Home" style="margin-right: 3rem"/>Drupal Synergy</h2>
+    <h4>Work and Share coworking space</h4>
+    <h5>September 2-3, 2017</h5>
+  </section>
+
+  <section>
+    <h2>WiFi information</h2>
+
+    <h3>&nbsp;</h3>
+    <h3>Network name: <em>XXX</em></h3>
+    <h3>Password: <em>XXX</em></h3>
+  </section>
+
+  <section>
+    <h2>Core sponsors</h2>
+    <img src="media/ffw_logo.png">
+  </section>
+
+  <section>
+    <h2>Contributor sponsors</h2>
+    <img src="media/peitz.png" alt="Peitz and Co"/>
+    <img src="media/workandshare2.png" alt="Work and share"/>
+  </section>
+
+  <section>
+    <h2>Supporter sponsors</h2>
+    <img src="media/initlab.png" alt="initLab"/>
+    <img src="media/drupalizeme.jpg" alt="Drupalize.me"/>
+    <img src="media/siteground.png" alt="SiteGround" />
+  </section>
+
+  <section>
+    <h2>Lunch sponsor</h2>
+    <img src="media/voxteneo-logo@2x.png" alt="Vox Teneo" />
+  </section>
+
+</section>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+
+<script>
+
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+            { src: 'lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            } },
+            { src: 'plugin/markdown/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            } },
+            { src: 'plugin/markdown/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            } },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                hljs.initHighlightingOnLoad();
+            } },
+            { src: 'plugin/zoom-js/zoom.js', async: true, condition: function () {
+                return !!document.body.classList;
+            } },
+            { src: 'plugin/notes/notes.js', async: true, condition: function () {
+                return !!document.body.classList;
+            } }
+        ]
+    });
+
+  Reveal.addEventListener('fragmentshown');
+  Reveal.configure({autoSlide: 5000});
+</script>
+</body>
+</html>
