@@ -37,7 +37,7 @@
 
 <!-- Any section element inside of this container is displayed as a slide -->
 <section class="slides">
-  <section>
+  <section data-transition="zoom">
     <h2><img src="media/logo.png" alt="Home" style="margin-right: 3rem"/>Drupal Synergy</h2>
     <h4>Work and Share coworking space</h4>
     <h5>September 2-3, 2017</h5>
@@ -92,9 +92,9 @@
         history: true,
         center: true,
         autoSlide: 5000,
-
         theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+        transition: Reveal.getQueryHash().transition || 'slide', // default/cube/page/concave/zoom/linear/fade/none
+        transitionSpeed: 'slow',
 
         // Optional libraries used to extend on reveal.js
         dependencies: [
@@ -120,7 +120,6 @@
     });
 
   Reveal.addEventListener('fragmentshown');
-  //Reveal.configure({autoSlide: 5000});
 </script>
 </body>
 </html>
